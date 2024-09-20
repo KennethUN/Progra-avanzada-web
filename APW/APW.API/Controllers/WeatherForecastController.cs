@@ -4,25 +4,15 @@ namespace APW.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class WeatherForecastController(IHttpContextAccessor contextAccessor, ILogger<WeatherForecastController> logger) : ControllerBase
     {
-
-        public WeatherForecastController(IHttpContextAccessor contextAccessor) { 
-        
-        
-        }
-
+        private readonly ILogger<WeatherForecastController> _logger = logger;
+        public readonly IHttpContextAccessor _contextAccessor = contextAccessor;
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        private readonly ILogger<WeatherForecastController> _logger;
-
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
-        {
-            _logger = logger;
-        }
 
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()

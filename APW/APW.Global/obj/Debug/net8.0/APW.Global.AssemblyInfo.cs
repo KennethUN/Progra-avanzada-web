@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("APW.Global")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1633300692d779225945e67027d27d17ab8a2b7a")]
 [assembly: System.Reflection.AssemblyProductAttribute("APW.Global")]
 [assembly: System.Reflection.AssemblyTitleAttribute("APW.Global")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
